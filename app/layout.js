@@ -1,3 +1,4 @@
+import "./globals.css"
 import { ThemeProvider } from '../components/ThemeProvider'
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
