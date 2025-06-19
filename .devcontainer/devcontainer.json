@@ -1,0 +1,7 @@
+{
+  "name": "Hearing Dog Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:22",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install"
+}
