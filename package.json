@@ -6,23 +6,30 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "dependencies": {
+    "@supabase/supabase-js": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "@supabase/supabase-js": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "shadcn": "latest",
-    "tailwindcss": "latest",
-    "postcss": "latest",
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "prettier": "latest",
-    "jest": "latest",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
-    "@testing-library/jest-dom": "latest"
-  }
+    "@testing-library/user-event": "^14.6.1",
+    "autoprefixer": "latest",
+    "babel-jest": "^30.0.2",
+    "eslint": "latest",
+    "jest": "latest",
+    "jest-environment-jsdom": "^30.0.2",
+    "postcss": "latest",
+    "prettier": "latest",
+    "shadcn": "latest",
+    "tailwindcss": "latest"
+  },
+  "type": "module"
 }
