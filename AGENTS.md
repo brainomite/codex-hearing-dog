@@ -7,7 +7,6 @@
 - **Docker/devcontainer** environment with Node.js v18+, ports forwarded (e.g., 3000).
 
 ## Code Style
-- JavaScript only — no `.ts` or type annotations.
 - Functional React components with hooks.
 - Tailwind utility-first styling.
 - PascalCase for component filenames (e.g., `SiteHeader.js`).
@@ -27,8 +26,9 @@ supabase.js
 README.md
 
 ## Testing & CI
+- Develop using TDD
 - Commands: `npm run lint`, `npm test`, `npm run build`.
-- All generated code must pass lint and build.
+- All generated code must pass lint and build and tests.
 - Provide CI/test logs for verification with PRs.
 
 ## PR / Task Guidelines
@@ -38,5 +38,5 @@ README.md
 - Provide commit logs or screenshots for verification.
 
 ## Dev Environment
-- `.devcontainer` with Node.js 18+, port 3000 forwarded.
-- Automatically run `npm install` on container launch.
+- `.devcontainer` with Node.js 22+ LTS, port 3000 forwarded.
+  - Make sure zsh is installed, and oh-my-zsh, git should allow for agent-forwarding
