@@ -1,0 +1,21 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:22",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "forwardPorts": [3000],
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/devcontainers/features/zsh:1": {
+      "installOhMyZsh": true
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  },
+  "postStartCommand": "npm run dev"
+}

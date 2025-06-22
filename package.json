@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "shadcn": "latest",
-    "shadcn-ui": "latest"
+    "shadcn-ui": "latest",
     "tailwindcss": "latest",
     "postcss": "latest",
     "autoprefixer": "latest",
